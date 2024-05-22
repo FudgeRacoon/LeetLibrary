@@ -2,7 +2,7 @@
 
 ## Intituion
 
-We can simply systematically examine each possible pair of elements in the array to see if their sum matches the target. This is done by using two nested loops: the outer loop iterates through each element, while the inner loop checks every subsequent element for a sum that equals the target. By comparing all possible pairs, we ensure that we find the correct indices of the two numbers whose sum matches the target, adhering to the problem's constraints.
+We can systematically examine each possible pair of elements in the array to see if their sum matches the target. This is done by using two nested loops: the outer loop iterates through each element, while the inner loop checks every subsequent element for a sum that equals the target. By comparing all possible pairs, we ensure that we find the correct indices of the two numbers whose sum matches the target, adhering to the problem's constraints.
 
 ## Algorithm
 
@@ -29,11 +29,11 @@ public:
 
 ## Complexity Analysis
 
-- Time complexity: ${O(n^2)}
+- Time complexity: $O(n^2)$
     
-    For each element, we try to find its complement by looping through the rest of the array which takes ${O(n)} time. Therefore, the time complexity is ${O(n^2)}.
+    For each element, we try to find its complement by looping through the rest of the array which takes $O(n)$ time. Therefore, the time complexity is $O(n^2)$.
 
-- Space complexity: ${O(1)}.
+- Space complexity: $O(1)$.
 
     The space required does not depend on the size of the input array, so only constant space is used.
 
@@ -41,9 +41,9 @@ public:
 
 ## Intuition
 
-To improve our runtime complexity, we need a more efficient way to check if the complement exists in the array. If the complement exists, we need to get its index. What is the best way to maintain a mapping of each element in the array to its index? A hash table.
+To improve the runtime complexity, we need a more efficient way to check if the complement exists in the array. If the complement exists, we need to get its index. What is the best way to maintain a mapping of each element in the array to its index? A hash table.
 
-We can reduce the lookup time from ${O(n)} to ${O(1)} by trading space for speed. A hash table is well suited for this purpose because it supports fast lookup in near constant time. I say "near" because if a collision occurred, a lookup could degenerate to ${O(n)} time. However, lookup in a hash table should be amortized ${O(1)} time as long as the hash function was chosen carefully.
+We can reduce the lookup time from $O(n)$ to $O(1)$ by trading space for speed. A hash table is well suited for this purpose because it supports fast lookup in near constant time. I say "near" because if a collision occurred, a lookup could degenerate to $O(n)$ time. However, lookup in a hash table should be amortized $O(1)$ time as long as the hash function was chosen carefully.
 
 ## Algorithm
 
@@ -72,13 +72,13 @@ public:
 
 ## Complexity Analysis
 
-- Time complexity: ${O(n)}.
+- Time complexity: $O(n)$.
 
-    We traverse the list containing nnn elements exactly twice. Since the hash table reduces the lookup time to ${O(1)}, the overall time complexity is ${O(n)}.
+    We traverse the list containing nnn elements exactly twice. Since the hash table reduces the lookup time to $O(1)$, the overall time complexity is $O(n)$.
 
-- Space complexity: ${O(n)}.
+- Space complexity: $O(n)$.
 
-    The extra space required depends on the number of items stored in the hash table, which stores exactly nnn elements.
+    The extra space required depends on the number of items stored in the hash table, which stores exactly `n` elements.
 
 ### Approach 3: One-pass Hash Table
 
@@ -107,10 +107,10 @@ public:
 
 ## Complexity Analysis
 
-- Time complexity: ${O(n)}.
+- Time complexity: $O(n)$}.
     
-    We traverse the list containing nnn elements only once. Each lookup in the table costs only ${O(1)} time.
+    We traverse the list containing nnn elements only once. Each lookup in the table costs only $O(1)$ time.
 
-- Space complexity: ${O(n)}.
+- Space complexity: $O(n)$.
     
     The extra space required depends on the number of items stored in the hash table, which stores at most `n` elements.
