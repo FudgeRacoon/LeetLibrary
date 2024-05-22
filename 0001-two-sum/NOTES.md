@@ -29,11 +29,11 @@ public:
 
 ## Complexity Analysis
 
-- Time complexity: $\O(n^2)
+- Time complexity: ${O(n^2)}
     
-    For each element, we try to find its complement by looping through the rest of the array which takes $\O(n) time. Therefore, the time complexity is $\O(n^2).
+    For each element, we try to find its complement by looping through the rest of the array which takes ${O(n)} time. Therefore, the time complexity is ${O(n^2)}.
 
-- Space complexity: $\O(1).
+- Space complexity: ${O(1)}.
 
     The space required does not depend on the size of the input array, so only constant space is used.
 
@@ -43,7 +43,7 @@ public:
 
 To improve our runtime complexity, we need a more efficient way to check if the complement exists in the array. If the complement exists, we need to get its index. What is the best way to maintain a mapping of each element in the array to its index? A hash table.
 
-We can reduce the lookup time from $\O(n) to $\O(1) by trading space for speed. A hash table is well suited for this purpose because it supports fast lookup in near constant time. I say "near" because if a collision occurred, a lookup could degenerate to $\O(n) time. However, lookup in a hash table should be amortized O(1) time as long as the hash function was chosen carefully.
+We can reduce the lookup time from ${O(n)} to ${O(1)} by trading space for speed. A hash table is well suited for this purpose because it supports fast lookup in near constant time. I say "near" because if a collision occurred, a lookup could degenerate to ${O(n)} time. However, lookup in a hash table should be amortized ${O(1)} time as long as the hash function was chosen carefully.
 
 ## Algorithm
 
@@ -72,11 +72,11 @@ public:
 
 ## Complexity Analysis
 
-- Time complexity: $\O(n).
+- Time complexity: ${O(n)}.
 
-    We traverse the list containing nnn elements exactly twice. Since the hash table reduces the lookup time to $\O(1), the overall time complexity is $\O(n).
+    We traverse the list containing nnn elements exactly twice. Since the hash table reduces the lookup time to ${O(1)}, the overall time complexity is ${O(n)}.
 
-- Space complexity: $\O(n).
+- Space complexity: ${O(n)}.
 
     The extra space required depends on the number of items stored in the hash table, which stores exactly nnn elements.
 
@@ -107,10 +107,10 @@ public:
 
 ## Complexity Analysis
 
-- Time complexity: $\O(n).
+- Time complexity: ${O(n)}.
     
-    We traverse the list containing nnn elements only once. Each lookup in the table costs only $\O(1) time.
+    We traverse the list containing nnn elements only once. Each lookup in the table costs only ${O(1)} time.
 
-- Space complexity: $\O(n).
+- Space complexity: ${O(n)}.
     
     The extra space required depends on the number of items stored in the hash table, which stores at most `n` elements.
