@@ -1,6 +1,6 @@
 class Solution {
 public:
-    /** Brute-Force Solution
+    /** Brute-Force Solution **/
     vector<int> twoSum(vector<int>& nums, int target) {
         for(int p1 = 0; p1 < nums.size(); p1++)
             for(int p2 = p1 + 1; p2 < nums.size(); p2++)
@@ -9,9 +9,8 @@ public:
             
         return vector<int>();
     }
-    **/
 
-    /** Two-Pass Hash Table
+    /** Two-Pass Hash Table Solution **/
     vector<int> twoSum(vector<int>& nums, int target) {
         unordered_map<int, int> hash_table;
 
@@ -29,9 +28,9 @@ public:
 
         return vector<int>();
     }
-    **/
+    
 
-    /** Two-Pass Hash Table **/
+    /** Two-Pass Hash Table Solution **/
     vector<int> twoSum(vector<int>& nums, int target) {
         unordered_map<int, int> hash_table;
 
