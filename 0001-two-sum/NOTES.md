@@ -107,7 +107,7 @@ public:
 
 ## Complexity Analysis
 
-- Time complexity: $O(n)$}.
+- Time complexity: $O(n)$.
     
     We traverse the list containing nnn elements only once. Each lookup in the table costs only $O(1)$ time.
 
