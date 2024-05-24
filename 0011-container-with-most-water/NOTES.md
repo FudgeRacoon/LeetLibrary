@@ -28,8 +28,8 @@ int MaxArea(vector<int>& height) {
 ```
 
 ## Complexity Analysis
-- **Time Complexity:** ${O(n^2)}, where $O{(n)} is the number of lines. This is because we are checking all possible pairs of lines.
-- **Space Complexity:** ${O(1)}, since we are using only a constant amount of extra space.
+- **Time Complexity:** $O(n^2)$, where $O(n)$ is the number of lines. This is because we are checking all possible pairs of lines.
+- **Space Complexity:** $O(1)$, since we are using only a constant amount of extra space.
 
 # Approach 2: Shifting Pointers
 
@@ -65,6 +65,6 @@ int MaxArea(vector<int>& height) {
 ```
 
 ## Complexity Analysis
-- **Time Complexity:** $O{(n)}, where $O{(n)} is the number of lines. This is because each element is visited at most once by the two pointers.
-- **Space Complexity:** $O{(1)}), since we are using only a constant amount of extra space.
+- **Time Complexity:** $O(n)$, where $O(n)$ is the number of lines. This is because each element is visited at most once by the two pointers.
+- **Space Complexity:** $O(1)$, since we are using only a constant amount of extra space.
 """​
